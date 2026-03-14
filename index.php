@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['act'])) {
 
     if ($act === "Add" || $act === "Nicht fuer mich") {
         $raw_preis = floatval(str_replace(',', '.', $_POST['preis'] ?? 0));
-        // Spezialität aus dem Original: "Nicht für mich" wird verdoppelt gespeichert
+        // "Nicht für mich" wird verdoppelt gespeichert
         $gespeicherter_preis = ($act === "Nicht fuer mich") ? $raw_preis * 2 : $raw_preis;
         
         $newLine = [
