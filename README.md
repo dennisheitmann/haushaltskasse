@@ -2,3 +2,5 @@
 Haushaltskasse für zwei Personen
 - Geschrieben in PHP
 - Datenspeicherung in CSV-Dateien
+
+![screenshot](screenshot.png)
